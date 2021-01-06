@@ -1,2 +1,0 @@
-sdwd awd
-awd wad 
