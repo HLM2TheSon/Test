@@ -1,0 +1,7 @@
+  string url = @"E:\Train\AssetBundle\AssetBundles_ab\capsule.unity3d";
+        UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(url);
+        yield return request.SendWebRequest();
+        AssetBundle ab = DownloadHandlerAssetBundle.GetContent(request);
+
+        GameObject cube = ab.LoadAsset<GameObject>("Capsule");
+        Instantiate(cube);
